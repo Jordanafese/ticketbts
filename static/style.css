@@ -180,6 +180,20 @@ div[for="timer"] a {
     font-weight: 400;
 }
 
+#ViewTicket {
+    height: 29px;
+    width: 260px;
+    display: flex;
+    background-color: #1f262d;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    font-size: 14px;
+    color:white;
+    font-family: averta_semibold, sans-serif;
+    font-weight: 500;
+
+}
 #vt > a {
 	font-weight: 200;
 	font-size: 14px;
