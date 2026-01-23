@@ -87,7 +87,7 @@ div[for = "menu"]{
     justify-content: space-around;
 }
 div[for="card"] {
-    width: 320px;
+    width: 330px;
     min-height: 500px;
     box-shadow: 0 0 5px 0 rgb(0 0 0 / 12%), 0 5px 5px 0 rgb(0 0 0 / 6%);
     border-radius: 12px;
@@ -102,13 +102,13 @@ div[for="head"] {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    font-size: 15px;
+    font-size: 14px;
 }
 
 div[for="head_info"] {
     background-color: #026cdf;
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: auto auto auto;
     grid-gap: 40px;
     padding: 15px 10px;
 }
@@ -181,7 +181,7 @@ div[for="timer"] a {
 }
 
 #ViewTicket {
-    height: 29px;
+    height: 39px;
     width: 260px;
     display: flex;
     background-color: #1f262d;
