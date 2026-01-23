@@ -13,7 +13,17 @@ body {
     margin: 0;
     padding: 0;
     font-size: 16px;
-    font-family: averta_regular,sans-serif;
+    font-family:
+    averta_regular,
+    sans-serif,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Noto Color Emoji";
     background-color: rgb(246 246 246 / 59%);
 }
 
@@ -95,6 +105,7 @@ div[for="card"] {
 }
 
 div[for="head"] {
+     --container-bg: #155fc8;
     background-color: #155fc8;
     border-radius: 12px 12px 0 0;
     padding: 10px 8px;
@@ -259,4 +270,28 @@ div[for="dots"] > div:first-child{
 
 div::-webkit-scrollbar {
     display: none;
+}
+
+.info-icon {
+  display: inline-flex;
+
+  /* Slightly larger than text */
+  width: 1.25em;
+  height: 1.25em;
+
+  /* White outline + white “i” */
+  color: #ffffff;
+
+  /* Baseline alignment */
+  vertical-align: -0.15em;
+}
+
+.info-icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+/* Inner fill color */
+.info-icon .info-bg {
+  fill: #155FC8;
 }
