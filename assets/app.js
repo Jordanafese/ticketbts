@@ -58,10 +58,15 @@ const transferToBtn = document.getElementById("transfer-to-btn");
 const transferModalClose = document.getElementById("transfer-modal-close");
 
 ticketCards.forEach((card) => {
-  card.addEventListener("click", () => {
+  card.addEventListener("click", (e) => {
+    e.stopPropagation();
     ticketCards.forEach((item) => item.classList.remove("selected"));
     card.classList.add("selected");
   });
+});
+
+document.addEventListener("click", () => {
+  ticketCards.forEach((item) => item.classList.remove("selected"));
 });
 
 function populateModalSeats() {
